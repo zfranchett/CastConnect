@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CastConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/trips">CastConnect</a>
+      <div id="city"></div>
+      <nav id="nav" aria-label="Main"></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="notice"></div>
+    <div id="app"><p class="loading">Loading…</p></div>
+  </main>
+
+  <footer class="wrap site-footer">
+    <p>Fish only where it's allowed and follow your state's rules.
+      <a href="#/faq">FAQ and safety</a> &middot; <a href="#/report">Report a problem</a></p>
+  </footer>
+
+  <!-- Supabase library (loaded from the internet) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Your project's URL and key -->
+  <script src="config.js"></script>
+  <!-- The app itself -->
+  <script src="app.js"></script>
+</body>
+</html>
